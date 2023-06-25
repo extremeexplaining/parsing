@@ -1,0 +1,15 @@
+Objective-C
+
+- MVC
+View (MainMenu.xib)
+Controller (AppController)
+Model (Scanner, Parser, Evaluator)
+
+
+- Implementation
+Scanner: a static class with class functions
+Parser: a static class with class functions
+Evaluator: a static class with class functions
+
+Token: dynamic object (created by the Scanner)
+Tree: dynamic object (created by the Parser), (BinaryTree, Leaf)

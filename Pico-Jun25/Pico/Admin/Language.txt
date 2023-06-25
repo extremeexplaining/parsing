@@ -1,0 +1,17 @@
+Pico programming language
+
+- Correct statements
+10
+10+2
+10+2*3
+10+2*3+4
+
+- Incorrect statements
+10+
+10@
+10 20
+
+- Grammer (EBNF)
+Expr = Term {+ Term}
+Term = Number {* Number}
+Number = digit {digit}
