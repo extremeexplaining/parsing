@@ -1,0 +1,17 @@
+Logo programming language
+
+- Correct statements
+F10+T45
+R3[F10+T45]
+R3[F10+T45]+F200
+
+- Incorrect statements
+F100]
+R2[F10
+R3[F10,T45]
+
+- Grammer (EBNF)
+ Program = Command {+ Command} Eof
+ Command = F Number | T Number | R Number [ InnerProgram ]
+ InnerProgram = Command {+ Command}
+ Number = digit {digit}
